@@ -1,0 +1,7 @@
+// by Starfelll、糯米饭团
+// Alyx动作
+$includemodel "alyx_animations.mdl"
+$includemodel "alyx_postures.mdl"
+$includemodel "alyx_gestures.mdl"
+$includemodel "humans/female_shared.mdl"
+$includemodel "humans/female_ss.mdl"

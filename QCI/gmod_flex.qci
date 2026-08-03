@@ -1,0 +1,162 @@
+// by Starfelll、糯米饭团
+
+flex Eye_WinkA_L
+flex Eye_WinkA_R
+flex Eye_WinkB_L
+flex Eye_WinkB_R
+flex Eye_WinkC_L
+flex Eye_WinkC_R
+flex Eye_Ha
+flex Eye_Jito
+flex Eye_Wail
+flex Eye_Hostility
+flex Eye_Tired
+flex Eye_WUp
+flex Eye_WDown
+flex Eye_Lowereyelid
+flex Mouth_Default
+flex Mouth_A01
+flex Mouth_Open01
+flex Mouth_Smile01
+flex Mouth_Smile02
+flex Mouth_Angry01
+flex Mouth_Angry02
+flex Mouth_Angry03
+flex Mouth_Fury01
+flex Mouth_Doya01
+flex Mouth_Doya02
+flex Mouth_Neko01
+flex Mouth_Pero01
+flex Mouth_Pero02
+flex Mouth_Line01
+flex Mouth_Line02
+flex Mouth_BigTongue01
+flex Brow_Default
+flex Brow_Trouble_L
+flex Brow_Trouble_R
+flex Brow_Smily_L
+flex Brow_Smily_R
+flex Brow_Angry_L
+flex Brow_Angry_R
+flex Brow_Shy_L
+flex Brow_Shy_R
+flex Brow_Up_L
+flex Brow_Up_R
+flex Brow_Down_L
+flex Brow_Down_R
+flex Brow_Squeeze_L
+flex Brow_Squeeze_R
+flex pupils
+// flex EyeStar
+flex Eye_up
+flex Eye_down
+flex Eye_left
+flex Eye_right
+
+
+flexcontroller eye range 0 1 "Eye_WinkA_L"
+flexcontroller eye range 0 1 "Eye_WinkA_R"
+flexcontroller eye range 0 1 "Eye_WinkB_L"
+flexcontroller eye range 0 1 "Eye_WinkB_R"
+flexcontroller eye range 0 1 "Eye_WinkC_L"
+flexcontroller eye range 0 1 "Eye_WinkC_R"
+flexcontroller eye range 0 1 "Eye_Ha"
+flexcontroller eye range 0 1 "Eye_Jito"
+flexcontroller eye range 0 1 "Eye_Wail"
+flexcontroller eye range 0 1 "Eye_Hostility"
+flexcontroller eye range 0 1 "Eye_Tired"
+flexcontroller eye range 0 1 "Eye_WUp"
+flexcontroller eye range 0 1 "Eye_WDown"
+flexcontroller eye range 0 1 "Eye_Lowereyelid"
+flexcontroller mouth range 0 1 "Mouth_Default"
+flexcontroller mouth range 0 1 "Mouth_A01"
+flexcontroller mouth range 0 1 "Mouth_Open01"
+flexcontroller mouth range 0 1 "Mouth_Smile01"
+flexcontroller mouth range 0 1 "Mouth_Smile02"
+flexcontroller mouth range 0 1 "Mouth_Angry01"
+flexcontroller mouth range 0 1 "Mouth_Angry02"
+flexcontroller mouth range 0 1 "Mouth_Angry03"
+flexcontroller mouth range 0 1 "Mouth_Fury01"
+flexcontroller mouth range 0 1 "Mouth_Doya01"
+flexcontroller mouth range 0 1 "Mouth_Doya02"
+flexcontroller mouth range 0 1 "Mouth_Neko01"
+flexcontroller mouth range 0 1 "Mouth_Pero01"
+flexcontroller mouth range 0 1 "Mouth_Pero02"
+flexcontroller mouth range 0 1 "Mouth_Line01"
+flexcontroller mouth range 0 1 "Mouth_Line02"
+flexcontroller mouth range 0 1 "Mouth_BigTongue01"
+flexcontroller brow range 0 1 "Brow_Default"
+flexcontroller brow range 0 1 "Brow_Trouble_L"
+flexcontroller brow range 0 1 "Brow_Trouble_R"
+flexcontroller brow range 0 1 "Brow_Smily_L"
+flexcontroller brow range 0 1 "Brow_Smily_R"
+flexcontroller brow range 0 1 "Brow_Angry_L"
+flexcontroller brow range 0 1 "Brow_Angry_R"
+flexcontroller brow range 0 1 "Brow_Shy_L"
+flexcontroller brow range 0 1 "Brow_Shy_R"
+flexcontroller brow range 0 1 "Brow_Up_L"
+flexcontroller brow range 0 1 "Brow_Up_R"
+flexcontroller brow range 0 1 "Brow_Down_L"
+flexcontroller brow range 0 1 "Brow_Down_R"
+flexcontroller brow range 0 1 "Brow_Squeeze_L"
+flexcontroller brow range 0 1 "Brow_Squeeze_R"
+flexcontroller eye range 0 1 "pupils"
+// flexcontroller eye range 0 1 "EyeStar"
+flexcontroller eye range 0 1 "Eye_up"
+flexcontroller eye range 0 1 "Eye_down"
+flexcontroller eye range 0 1 "Eye_left"
+flexcontroller eye range 0 1 "Eye_right"
+
+
+%Eye_WinkA_L = "Eye_WinkA_L"
+%Eye_WinkA_R = "Eye_WinkA_R"
+%Eye_WinkB_L = "Eye_WinkB_L"
+%Eye_WinkB_R = "Eye_WinkB_R"
+%Eye_WinkC_L = "Eye_WinkC_L"
+%Eye_WinkC_R = "Eye_WinkC_R"
+%Eye_Ha = "Eye_Ha"
+%Eye_Jito = "Eye_Jito"
+%Eye_Wail = "Eye_Wail"
+%Eye_Hostility = "Eye_Hostility"
+%Eye_Tired = "Eye_Tired"
+%Eye_WUp = "Eye_WUp"
+%Eye_WDown = "Eye_WDown"
+%Eye_Lowereyelid = "Eye_Lowereyelid"
+%Mouth_Default = "Mouth_Default"
+%Mouth_A01 = "Mouth_A01"
+%Mouth_Open01 = "Mouth_Open01"
+%Mouth_Smile01 = "Mouth_Smile01"
+%Mouth_Smile02 = "Mouth_Smile02"
+%Mouth_Angry01 = "Mouth_Angry01"
+%Mouth_Angry02 = "Mouth_Angry02"
+%Mouth_Angry03 = "Mouth_Angry03"
+%Mouth_Fury01 = "Mouth_Fury01"
+%Mouth_Doya01 = "Mouth_Doya01"
+%Mouth_Doya02 = "Mouth_Doya02"
+%Mouth_Neko01 = "Mouth_Neko01"
+%Mouth_Pero01 = "Mouth_Pero01"
+%Mouth_Pero02 = "Mouth_Pero02"
+%Mouth_Line01 = "Mouth_Line01"
+%Mouth_Line02 = "Mouth_Line02"
+%Mouth_BigTongue01 = "Mouth_BigTongue01"
+%Brow_Default = "Brow_Default"
+%Brow_Trouble_L = "Brow_Trouble_L"
+%Brow_Trouble_R = "Brow_Trouble_R"
+%Brow_Smily_L = "Brow_Smily_L"
+%Brow_Smily_R = "Brow_Smily_R"
+%Brow_Angry_L = "Brow_Angry_L"
+%Brow_Angry_R = "Brow_Angry_R"
+%Brow_Shy_L = "Brow_Shy_L"
+%Brow_Shy_R = "Brow_Shy_R"
+%Brow_Up_L = "Brow_Up_L"
+%Brow_Up_R = "Brow_Up_R"
+%Brow_Down_L = "Brow_Down_L"
+%Brow_Down_R = "Brow_Down_R"
+%Brow_Squeeze_L = "Brow_Squeeze_L"
+%Brow_Squeeze_R = "Brow_Squeeze_R"
+%pupils = "pupils"
+// %EyeStar = "EyeStar"
+%Eye_up = "Eye_up"
+%Eye_down = "Eye_down"
+%Eye_left = "Eye_left"
+%Eye_right = "Eye_right"

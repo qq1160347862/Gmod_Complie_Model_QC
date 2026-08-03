@@ -1,0 +1,51 @@
+// by Starfelll、糯米饭团
+
+$NekoDriverBone "ValveBiped.Bip01_L_Hand" {
+    pose "anims/vrd.smd"
+    trigger 90 0
+    trigger 90 1
+    trigger 90 2
+
+    "ValveBiped.Bip01_L_Wrist"
+}
+
+$NekoDriverBone "ValveBiped.Bip01_R_Hand" {
+    pose "anims/vrd.smd"
+    trigger 90 0
+    trigger 90 1
+    trigger 90 2
+
+    "ValveBiped.Bip01_R_Wrist"
+}
+
+$NekoDriverBone "ValveBiped.Bip01_L_Thigh" {
+    pose "anims/vrd.smd"
+    trigger 90 0
+    trigger 90 1
+    trigger 90 2
+    trigger 90 3
+    trigger 60 4
+
+    "c_kilt_01_01.l"
+    "c_kilt_02_01.l"
+    "c_kilt_03_01.l"
+    "c_kilt_04_01.l"
+    "c_kilt_05_01.l"
+    "c_kilt_06_01.l"
+}
+
+$NekoDriverBone "ValveBiped.Bip01_R_Thigh" {
+    pose "anims/vrd.smd"
+    trigger 90 0
+    trigger 90 1
+    trigger 90 2
+    trigger 90 3
+    trigger 60 4
+
+    "c_kilt_01_01.r"
+    "c_kilt_02_01.r"
+    "c_kilt_03_01.r"
+    "c_kilt_04_01.r"
+    "c_kilt_05_01.r"
+    "c_kilt_06_01.r"
+}

@@ -1,0 +1,199 @@
+// by Starfelll、糯米饭团
+
+$collisionjoints "SMD/npc_physics.smd"
+{
+	// 红x，绿y，蓝z
+	$mass 40
+	$inertia 10
+	$damping 0.05
+	$rotdamping 5
+	$rootbone "valvebiped.bip01_pelvis"
+
+	$jointrotdamping "ValveBiped.Bip01_Pelvis" 3
+
+	$jointmassbias "ValveBiped.Bip01_R_Thigh" 7
+	$jointrotdamping "ValveBiped.Bip01_R_Thigh" 7
+	$jointconstrain "ValveBiped.Bip01_R_Thigh" x limit -25 25 0
+	$jointconstrain "ValveBiped.Bip01_R_Thigh" y limit -60 10 0
+	$jointconstrain "ValveBiped.Bip01_R_Thigh" z limit -90 25 0
+
+
+	$jointmassbias "ValveBiped.Bip01_R_Calf" 4
+	$jointconstrain "ValveBiped.Bip01_R_Calf" x limit -10 15 0
+	$jointconstrain "ValveBiped.Bip01_R_Calf" y limit -5 5 0
+	$jointconstrain "ValveBiped.Bip01_R_Calf" z limit -10 115 0
+
+	$jointmassbias "ValveBiped.Bip01_L_Thigh" 7
+	$jointrotdamping "ValveBiped.Bip01_L_Thigh" 7
+	$jointconstrain "ValveBiped.Bip01_L_Thigh" x limit -25 25 0
+	$jointconstrain "ValveBiped.Bip01_L_Thigh" y limit -10 60 0
+	$jointconstrain "ValveBiped.Bip01_L_Thigh" z limit -90 25 0
+
+	$jointmassbias "ValveBiped.Bip01_L_Calf" 4
+	$jointconstrain "ValveBiped.Bip01_L_Calf" x limit -15 10 0
+	$jointconstrain "ValveBiped.Bip01_L_Calf" y limit -5 5 0
+	$jointconstrain "ValveBiped.Bip01_L_Calf" z limit -10 115 0
+
+	$jointrotdamping "ValveBiped.Bip01_L_Foot" 2
+	$jointconstrain "ValveBiped.Bip01_L_Foot" x limit -20 20 0
+	$jointconstrain "ValveBiped.Bip01_L_Foot" y limit -20 20 0
+	$jointconstrain "ValveBiped.Bip01_L_Foot" z limit -20 45 0
+
+	$jointmassbias "ValveBiped.Bip01_Spine1" 8
+	$jointconstrain "ValveBiped.Bip01_Spine1" x limit -10 10 0
+	$jointconstrain "ValveBiped.Bip01_Spine1" y limit -8 8 0
+	$jointconstrain "ValveBiped.Bip01_Spine1" z limit -5 5 0
+
+	$jointmassbias "ValveBiped.Bip01_Spine4" 9
+	$jointconstrain "ValveBiped.Bip01_Spine4" x limit -10 10 0
+	$jointconstrain "ValveBiped.Bip01_Spine4" y limit -10 10 0
+	$jointconstrain "ValveBiped.Bip01_Spine4" z limit -10 10 0
+
+	$jointmassbias "ValveBiped.Bip01_R_Clavicle" 4
+	$jointrotdamping "ValveBiped.Bip01_R_Clavicle" 6
+	$jointconstrain "ValveBiped.Bip01_R_Clavicle" x limit -15 15 0
+	$jointconstrain "ValveBiped.Bip01_R_Clavicle" y limit 0 0 0
+	$jointconstrain "ValveBiped.Bip01_R_Clavicle" z limit 0 30 0
+
+	$jointmassbias "ValveBiped.Bip01_R_UpperArm" 5
+	$jointrotdamping "ValveBiped.Bip01_R_UpperArm" 2
+	$jointconstrain "ValveBiped.Bip01_R_UpperArm" x limit -15 20 0
+	$jointconstrain "ValveBiped.Bip01_R_UpperArm" y limit -80 80 0
+	$jointconstrain "ValveBiped.Bip01_R_UpperArm" z limit -80 25 0
+
+	$jointmassbias "ValveBiped.Bip01_L_Clavicle" 4
+	$jointrotdamping "ValveBiped.Bip01_L_Clavicle" 6
+	$jointconstrain "ValveBiped.Bip01_L_Clavicle" x limit -15 15 0
+	$jointconstrain "ValveBiped.Bip01_L_Clavicle" y limit 0 0 0
+	$jointconstrain "ValveBiped.Bip01_L_Clavicle" z limit 0 30 0
+
+	$jointmassbias "ValveBiped.Bip01_L_UpperArm" 5
+	$jointrotdamping "ValveBiped.Bip01_L_UpperArm" 2
+	$jointconstrain "ValveBiped.Bip01_L_UpperArm" x limit -15 20 0
+	$jointconstrain "ValveBiped.Bip01_L_UpperArm" y limit -80 80 0
+	$jointconstrain "ValveBiped.Bip01_L_UpperArm" z limit -80 25 0
+
+	$jointmassbias "ValveBiped.Bip01_L_Forearm" 4
+	$jointrotdamping "ValveBiped.Bip01_L_Forearm" 4
+	$jointconstrain "ValveBiped.Bip01_L_Forearm" x limit -40 15 0
+	$jointconstrain "ValveBiped.Bip01_L_Forearm" y limit 0 0 0
+	$jointconstrain "ValveBiped.Bip01_L_Forearm" z limit -120 10 0
+
+	$jointrotdamping "ValveBiped.Bip01_L_Hand" 1
+	$jointconstrain "ValveBiped.Bip01_L_Hand" x limit -25 25 0
+	$jointconstrain "ValveBiped.Bip01_L_Hand" y limit -35 35 0
+	$jointconstrain "ValveBiped.Bip01_L_Hand" z limit -50 50 0
+
+	$jointmassbias "ValveBiped.Bip01_R_Forearm" 4
+	$jointrotdamping "ValveBiped.Bip01_R_Forearm" 4
+	$jointconstrain "ValveBiped.Bip01_R_Forearm" x limit -40 15 0
+	$jointconstrain "ValveBiped.Bip01_R_Forearm" y limit 0 0 0
+	$jointconstrain "ValveBiped.Bip01_R_Forearm" z limit -120 10 0
+
+	$jointrotdamping "ValveBiped.Bip01_R_Hand" 1
+	$jointconstrain "ValveBiped.Bip01_R_Hand" x limit -25 25 0
+	$jointconstrain "ValveBiped.Bip01_R_Hand" y limit -35 35 0
+	$jointconstrain "ValveBiped.Bip01_R_Hand" z limit -50 50 0
+
+	$jointmassbias "ValveBiped.Bip01_Head1" 4
+	$jointrotdamping "ValveBiped.Bip01_Head1" 3
+	$jointconstrain "ValveBiped.Bip01_Head1" x limit -50 50 0
+	$jointconstrain "ValveBiped.Bip01_Head1" y limit -20 20 0
+	$jointconstrain "ValveBiped.Bip01_Head1" z limit -22 24 0
+
+	$jointrotdamping "ValveBiped.Bip01_R_Foot" 2
+	$jointconstrain "ValveBiped.Bip01_R_Foot" x limit -20 20 0
+	$jointconstrain "ValveBiped.Bip01_R_Foot" y limit -20 20 0
+	$jointconstrain "ValveBiped.Bip01_R_Foot" z limit -20 45 0
+
+	// $jointcollide "ValveBiped.Bip01_Head1" "Hair_0_1_R"
+	// $jointconstrain "Hair_0_1_R" x limit -10 10 0
+	// $jointconstrain "Hair_0_1_R" y limit -10 10 0
+	// $jointconstrain "Hair_0_1_R" z limit -2 2 0
+	// $jointcollide "ValveBiped.Bip01_Head1" "Hair_1_1_R"
+	// $jointconstrain "Hair_1_1_R" x limit -10 10 0
+	// $jointconstrain "Hair_1_1_R" y limit -10 10 0
+	// $jointconstrain "Hair_1_1_R" z limit -2 2 0
+	// $jointcollide "ValveBiped.Bip01_Head1" "Hair_2_1_R"
+	// $jointconstrain "Hair_2_1_R" x limit -10 10 0
+	// $jointconstrain "Hair_2_1_R" y limit -10 10 0
+	// $jointconstrain "Hair_2_1_R" z limit -2 2 0
+
+	// $jointcollide "ValveBiped.Bip01_Head1" "+HairBF01.R"
+	// $jointconstrain "+HairBF01.R" x limit -10 10 0
+	// $jointconstrain "+HairBF01.R" y limit -10 10 0
+	// $jointconstrain "+HairBF01.R" z limit -2 2 0
+	// $jointcollide "ValveBiped.Bip01_Head1" "+HairBF01.L"
+	// $jointconstrain "+HairBF01.L" x limit -10 10 0
+	// $jointconstrain "+HairBF01.L" y limit -10 10 0
+	// $jointconstrain "+HairBF01.L" z limit -2 2 0
+
+
+
+
+	// $jointcollide "ValveBiped.Bip01_Head1" "ponytailA_00.L.001"
+	// $jointconstrain "ponytailA_00.L.001" x limit -20 20 0
+	// $jointconstrain "ponytailA_00.L.001" y limit -20 20 0
+	// $jointconstrain "ponytailA_00.L.001" z limit -1 1 0
+	// $jointcollide "ValveBiped.Bip01_Head1" "ponytailA_00.R.001"
+	// $jointconstrain "ponytailA_00.R.001" x limit -20 20 0
+	// $jointconstrain "ponytailA_00.R.001" y limit -20 20 0
+	// $jointconstrain "ponytailA_00.R.001" z limit -1 1 0
+
+	// $jointcollide "ValveBiped.Bip01_Spine4" "Zbd_0_1"
+	// $jointcollide "ValveBiped.Bip01_Spine4" "Hbd_0_1"
+	// $jointcollide "ValveBiped.Bip01_Spine4" "Ybd_0_1"
+	// $jointconstrain "Zbd_0_1" x limit -8 8 0
+	// $jointconstrain "Zbd_0_1" y limit 0 0 0
+	// $jointconstrain "Zbd_0_1" z limit -8 8 0
+	// $jointconstrain "Hbd_0_1" x limit -8 8 0
+	// $jointconstrain "Hbd_0_1" y limit 0 0 0
+	// $jointconstrain "Hbd_0_1" z limit -8 8 0
+	// $jointconstrain "Ybd_0_1" x limit -8 8 0
+	// $jointconstrain "Ybd_0_1" y limit 0 0 0
+	// $jointconstrain "Ybd_0_1" z limit -8 8 0
+
+	// $jointcollide "ValveBiped.Bip01_Spine4" "HairC9"
+	// $jointcollide "ValveBiped.Bip01_Spine4" "HairC1_A8"
+	// $jointcollide "ValveBiped.Bip01_Spine4" "HairC1_B8"
+	// $jointconstrain "HairC9" x limit -15 15 0
+	// $jointconstrain "HairC9" y limit 0 0 0
+	// $jointconstrain "HairC9" z limit -4 8 0
+	// $jointconstrain "HairC1_A8" x limit -15 15 0
+	// $jointconstrain "HairC1_A8" y limit 0 0 0
+	// $jointconstrain "HairC1_A8" z limit -4 8 0
+	// $jointconstrain "HairC1_B8" x limit -15 15 0
+	// $jointconstrain "HairC1_B8" y limit 0 0 0
+	// $jointconstrain "HairC1_B8" z limit -4 8 0
+
+	// $jointcollide "ValveBiped.Bip01_Spine4" "HairC13"
+	// $jointcollide "ValveBiped.Bip01_Spine4" "HairC1_A12"
+	// $jointcollide "ValveBiped.Bip01_Spine4" "HairC1_B12"
+	// $jointconstrain "HairC13" x limit -15 15 0
+	// $jointconstrain "HairC13" y limit 0 0 0
+	// $jointconstrain "HairC13" z limit -4 8 0
+	// $jointconstrain "HairC1_A12" x limit -15 15 0
+	// $jointconstrain "HairC1_A12" y limit 0 0 0
+	// $jointconstrain "HairC1_A12" z limit -4 8 0
+	// $jointconstrain "HairC1_B12" x limit -15 15 0
+	// $jointconstrain "HairC1_B12" y limit 0 0 0
+	// $jointconstrain "HairC1_B12" z limit -4 8 0
+
+	// $jointcollide "ValveBiped.Bip01_Spine4" "HairC17"
+	// $jointcollide "ValveBiped.Bip01_Spine4" "HairC1_A16"
+	// $jointcollide "ValveBiped.Bip01_Spine4" "HairC1_B16"
+	// $jointconstrain "HairC17" x limit -15 15 0
+	// $jointconstrain "HairC17" y limit 0 0 0
+	// $jointconstrain "HairC17" z limit -4 8 0
+	// $jointconstrain "HairC1_A16" x limit -15 15 0
+	// $jointconstrain "HairC1_A16" y limit 0 0 0
+	// $jointconstrain "HairC1_A16" z limit -4 8 0
+	// $jointconstrain "HairC1_B16" x limit -15 15 0
+	// $jointconstrain "HairC1_B16" y limit 0 0 0
+	// $jointconstrain "HairC1_B16" z limit -4 8 0
+
+}
+
+
+
+

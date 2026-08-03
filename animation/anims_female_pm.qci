@@ -1,0 +1,8 @@
+// by Starfelll、糯米饭团
+//	女性玩家动作
+$includemodel "f_anm.mdl"    
+
+// $includemodel "f_gst.mdl"
+// $includemodel "f_pst.mdl"
+// $includemodel "f_shd.mdl"
+// $includemodel "f_ss.mdl"

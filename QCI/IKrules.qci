@@ -1,0 +1,23 @@
+// by Starfelll、糯米饭团
+
+$sectionframes 30 119
+
+$poseparameter "move_yaw" -180 180 loop 360
+$poseparameter "aim_yaw" -60 60 loop 0
+$poseparameter "aim_pitch" -88.95743 50 loop 0
+$poseparameter "body_yaw" -43.96424 49.46604 loop 0
+$poseparameter "spine_yaw" -54.67891 54.66705 loop 0
+$poseparameter "neck_trans" -0.140861 0.163729 loop 0
+$poseparameter "head_yaw" -61.7095 61.73312 loop 0
+$poseparameter "head_pitch" -39.8978 30.92974 loop 0
+$poseparameter "head_roll" -13.33936 13.73894 loop 0
+
+$ikchain "rhand" "ValveBiped.Bip01_R_Hand" knee 0.707 0.707 0
+$ikchain "lhand" "ValveBiped.Bip01_L_Hand" knee 0.707 0.707 0
+$ikchain "rfoot" "ValveBiped.Bip01_R_Foot" knee 0.707 -0.707 0
+$ikchain "lfoot" "ValveBiped.Bip01_L_Foot" knee 0.707 -0.707 0
+
+$ikautoplaylock "rhand" 0 0
+$ikautoplaylock "lhand" 0 0
+$ikautoplaylock "rfoot" 0.7 0.1
+$ikautoplaylock "lfoot" 0.7 0.1

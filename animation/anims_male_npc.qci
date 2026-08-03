@@ -1,0 +1,6 @@
+// by Starfelll、糯米饭团
+// 男性npc动作
+$includemodel "humans/male_shared.mdl"
+$includemodel "humans/male_ss.mdl"
+$includemodel "humans/male_gestures.mdl"
+$includemodel "humans/male_postures.mdl"

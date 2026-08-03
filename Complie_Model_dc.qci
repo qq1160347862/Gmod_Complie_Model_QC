@@ -1,0 +1,95 @@
+// by Starfelll、糯米饭团
+
+$DefineVariable custom_model_name "XXX"
+$DefineVariable pps_z_delta 0  // 调整根骨的垂直位置正数为下，负数为上
+// 关于以下两参数，分别在DefineBones.qci中的calf和foot骨骼中使用，用于调整 <小腿外翻> 和 <脚的垂直位置>
+// $DefineBone "ValveBiped.Bip01_L_Calf" "ValveBiped.Bip01_L_Thigh" 1 1 4 5 1 4 0 0 0 $calf_ik_fix$ 0 0
+// $DefineBone "ValveBiped.Bip01_R_Calf" "ValveBiped.Bip01_R_Thigh" 1 1 4 5 1 4 0 0 0 -$calf_ik_fix$ 0 0
+
+// $DefineBone "ValveBiped.Bip01_L_Foot" "ValveBiped.Bip01_L_Calf" 1 1 4 5 1 4 0 $foot_ik_fix$ 0 0 0 0
+// $DefineBone "ValveBiped.Bip01_R_Foot" "ValveBiped.Bip01_R_Calf" 1 1 4 5 1 4 0 $foot_ik_fix$ 0 0 0 0
+// 1 1 4 5 1 4 骨骼根部x,y,z 骨骼尾端x,y,z
+$DefineVariable foot_ik_fix 0  // 1、2、3...
+$DefineVariable calf_ik_fix 0  // 0.5开始调试
+$DefineVariable custom_model "smd/body.smd"     // 模型基底，一般不用于切换，没有blank项的Model或者bodygroup
+$DefineVariable ref_model alyx          //使用的人物动画，alyx或者male男市民d     //combine_soldier,police
+
+$MaxBones 256
+$FileBufferSize 32
+
+$NekoModel "face" {
+
+	studio "smd/face.smd"
+	// studio "gltf/emotion.glb" innode "face"      // 集合emotion中的face子集
+	// eyeball righteye "ValveBiped.Bip01_Head1" -1.8 -2.7 60.9 "face" 1.00 4 "iris_unused" 1.7
+    // eyeball lefteye  "ValveBiped.Bip01_Head1" 1.8 -2.7 60.9 "face" 1.00 -4 "iris_unused" 1.7
+    // eyelid upper "frame01" -0.5 "frame02" 0.09 "frame03" 0.11 "righteye" "lefteye"
+	// eyelid lower "frame01" -0.5 "frame02" -0.09 "frame03" -0.11 "righteye" "lefteye"
+    // mouth 0 "mouth" "ValveBiped.Bip01_Head1" 0 1 0
+	
+	// studio "gltf/emotion.glb" innode "face_star"     
+	// studio "gltf/emotion.glb" innode "face_happy" 
+	// studio "gltf/emotion.glb" innode "face_shy"   
+    // studio "gltf/emotion.glb" innode "face_angry" 
+
+	// $include "qci/gmod_flex.qci"
+	// $include "qci/alyx_flex.qci"
+}
+
+$include "bodygroups.qci"
+
+$include "materials.qci"
+
+$Include "animation/pps.qci"    // 以alyx和bmale的动作为基底，适配其他角色的ref动画
+$Animation "a_proportions" $custom_model$ Pick BindPose {   // 锁骨代码
+    subtract "a_reference" 0
+    origin 0 0 $pps_z_delta$
+}
+// $animation "Additive_animation" "anims/xxx.smd" Pick BindPose {
+//     subtract "a_reference" 0
+//     origin 0 0 $pps_z_delta$
+// }
+// $weightlist Additive_weightlist {
+//     "ValveBiped.Bip01_Pelvis" 0.0   // 子集继承
+//     "ARML1" 1.0
+//     "ARML2" 1.0
+//     "ARML3" 1.0
+//      ...
+// }
+
+$sequence "ragdoll" {
+	"anims/ragdoll.smd"
+	activity "ACT_DIERAGDOLL" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$surfaceprop "flesh"
+$contents "solid"
+$illumposition 0 -0.861 33.401
+$eyeposition 0 0 60
+$maxeyedeflection 30
+$forcephonemecrossfade
+$ambientboost
+$mostlyopaque
+
+$include "QCI/Attachment.qci"		// 附件位置
+$include "QCI/box.qci"				// 碰撞盒
+$Include "qci/DefineBones.qci" 		// 骨骼定义
+$include "flexbone.qci"
+//$include "qci/vrd.qci"
+$proceduralbones "model.vrd"
+$include "QCI/IKrules.qci"
+
+$Include animation/$declare_sequences_qci$
+$Sequence "Proportions" {
+    "a_proportions" autoplay delta hidden
+    // "Additive_animation" autoplay delta hidden
+}
+// $sequence wing_anim "Additive_animation" loop autoplay delta hidden {
+//     weightlist Additive_weightlist
+// }
+
+$include "qci/ragdoll.qci"
+

@@ -1,0 +1,51 @@
+// by Starfelll、糯米饭团
+
+$BodyGroup "body"
+{
+	studio "smd/body.smd"
+	blank
+}
+/********************************** dmx *********************************/
+// $NekoModel "other" {
+//     studio "dmx/other.dmx"
+	
+//     flex "my_flex1"		// blender形态键名称
+//     flexcontroller custom range 0 1 "形态键控制器1"	// source开关名称
+//     "%my_flex1" = "形态键控制器1"
+
+//     flex "my_flex2"
+//     flexcontroller custom range 0 1 "形态键控制器2"
+//     "%my_flex2" = "形态键控制器2"
+
+// 	studio "dmx/blank.dmx"
+// }
+/********************************** smd *********************************/
+// $Model "other" "smd/other.smd" {
+    
+//     flexfile "smd/other.vta" {
+//         defaultflex frame 0
+
+//         flex "my_flex1"         frame 1
+//         flex "my_flex2"         frame 2
+//     }
+
+//     flexcontroller custom range 0 1 "形态键控制器1"    
+//     "%my_flex1" = "形态键控制器1"
+
+//     flexcontroller custom range 0 1 "形态键控制器2"    
+//     "%my_flex2" = "形态键控制器2"
+// }
+/********************************** gltf ********************************/
+// $NekoModel "other" {
+//     studio "gltf/others.glb" innode "other"
+
+//     flex "my_flex1"		
+//     flexcontroller custom range 0 1 "形态键控制器1"	
+//     "%my_flex1" = "形态键控制器1"
+
+//     flex "my_flex2"
+//     flexcontroller custom range 0 1 "形态键控制器2"
+//     "%my_flex2" = "形态键控制器2"
+
+// 	studio "gltf/others.glb" innode "blank"
+// }

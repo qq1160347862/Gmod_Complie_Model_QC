@@ -1,0 +1,4 @@
+// by Starfelll、糯米饭团
+//国民护卫队
+$includemodel "Police_animations.mdl"  
+$includemodel "Police_ss.mdl"

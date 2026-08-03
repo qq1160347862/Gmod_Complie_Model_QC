@@ -1,0 +1,28 @@
+// by Starfelll、糯米饭团
+
+$cbox 0 0 0 0 0 0
+
+$bbox -17.684 -30.107 -0.243 6.967 30.138 72.155
+
+$hboxset "default"
+$hbox 3 "ValveBiped.Bip01_Pelvis" -6 -5.5 -3 6 6 4
+$hbox 3 "ValveBiped.Bip01_Spine1" 0 -2.5 -3.5 6 4.55 3.5
+$hbox 2 "ValveBiped.Bip01_Spine2" 0.75 -2.5 -3.5 11.25 4.5 3.5
+$hbox 1 "ValveBiped.Bip01_Head1" -1 -4 -3.5 8 4 3.5
+$hbox 4 "ValveBiped.Bip01_L_UpperArm" -1.5 -1.4 -1.43 12.5 1.4 1.43
+$hbox 4 "ValveBiped.Bip01_L_Forearm" -1.5 -1.26 -1.11 11.5 1.26 1.11
+$hbox 4 "ValveBiped.Bip01_L_Hand" -0.5 -1 -1.25 4.5 1 1.25
+$hbox 5 "ValveBiped.Bip01_R_UpperArm" -1.5 -1.4 -1.43 12.5 1.4 1.43
+$hbox 5 "ValveBiped.Bip01_R_Forearm" -1.5 -1.26 -1.12 11.5 1.26 1.12
+$hbox 5 "ValveBiped.Bip01_R_Hand" -0.5 -1 -1.15 4.5 1 1.33
+$hbox 6 "ValveBiped.Bip01_L_Thigh" 1 -3.05 -2.19 18 2.45 2.81
+$hbox 6 "ValveBiped.Bip01_L_Calf" -1.5 -2.13 -1.81 19.5 2.6 2.19
+$hbox 7 "ValveBiped.Bip01_R_Thigh" 1 -3.05 -2.8 18 2.45 2.2
+$hbox 7 "ValveBiped.Bip01_R_Calf" -1.5 -2.13 -2.18 19.5 2.6 1.82
+$hbox 6 "ValveBiped.Bip01_L_Foot" -2 0.5 -1.5 5 3.4 1.5
+$hbox 7 "ValveBiped.Bip01_R_Foot" -2 0.5 -1.5 5 3.4 1.5
+$hbox 6 "ValveBiped.Bip01_L_Toe0" 1 -0.5 -1.3 4 1.5 1.7
+$hbox 7 "ValveBiped.Bip01_R_Toe0" 1 -0.5 -1.5 4 1.5 1.5
+$skipboneinbbox
+
+// 后，上，，前，下，。
