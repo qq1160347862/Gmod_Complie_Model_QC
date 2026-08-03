@@ -1,0 +1,2 @@
+# Gmod_Complie_Model_QC
+基于Starfelll的ultimate_survivor_qc，更适合Gmod宝宝的编译模板
