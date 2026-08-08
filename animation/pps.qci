@@ -3,21 +3,31 @@
 // sacle_fix = 1.0 / $Scale
 $DefineVariable scale_fix 1.0  // 模型缩放因子
 
-$IF character == female_npc
-	$RedefineVariable ref_model "alyx"							// female_npc与alyx保持一致
-	$DefineVariable declare_sequences_qci "anims_female_npc.qci"
-$ELIF character == female_pm
-	$RedefineVariable ref_model "alyx"						// female_pm与alyx保持一致
-	$DefineVariable declare_sequences_qci "anims_female_pm.qci"
-$ELIF character == male_npc
-	$RedefineVariable ref_model "male"						// male_npc与male保持一致
-	$DefineVariable declare_sequences_qci "anims_male_npc.qci"
-$ELIF character == male_pm
-	$RedefineVariable ref_model "male"						// male_pm与male保持一致
-	$DefineVariable declare_sequences_qci "anims_male_pm.qci"
+$IF ref_model == auto
+	$IF character == female_npc
+		$RedefineVariable ref_model "alyx"						// female_npc与alyx保持一致
+		$DefineVariable declare_sequences_qci "anims_female_npc.qci"
+	$ELIF character == female_pm
+		$RedefineVariable ref_model "alyx"						// female_pm与alyx保持一致
+		$DefineVariable declare_sequences_qci "anims_female_pm.qci"
+	$ELIF character == male_npc
+		$RedefineVariable ref_model "male"						// male_npc与male保持一致
+		$DefineVariable declare_sequences_qci "anims_male_npc.qci"
+	$ELIF character == male_pm
+		$RedefineVariable ref_model "male"						// male_pm与male保持一致
+		$DefineVariable declare_sequences_qci "anims_male_pm.qci"
+	$ELIF character == combine_soldier
+		$RedefineVariable ref_model "male"						// combine_soldier与male保持一致
+		$DefineVariable declare_sequences_qci "anims_combine_soldier.qci"
+	$ELIF character == police
+		$RedefineVariable ref_model "male"						// police与male保持一致
+		$DefineVariable declare_sequences_qci "anims_police.qci"
+	$ELSE
+		$RedefineVariable ref_model "alyx"						
+		$DefineVariable declare_sequences_qci "anims_alyx.qci"
+	$endif
 $ELSE
-	$RedefineVariable ref_model "alyx"	
-	$DefineVariable declare_sequences_qci "anims_alyx.qci"
+	$DefineVariable declare_sequences_qci "anims_$ref_model$.qci"
 $endif
 
 $DefineMacro reference_pos_alyx \\

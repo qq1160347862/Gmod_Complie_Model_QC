@@ -3,7 +3,7 @@
 基于 Starfelll 的 `ultimate_survivor_qc` 优化，更适合 Gmod 宝宝的角色模型编译模板。
 
 > **作者**: Starfelll、糯米饭团  
-> **适用引擎**: Source / Garry's Mod  
+> **适用引擎**: Source  
 > **编译器**: nekomdl
 
 ---

@@ -11,8 +11,8 @@ $DefineVariable pps_z_delta 0  // 调整根骨的垂直位置正数为下，负�
 // 1 1 4 5 1 4 骨骼根部x,y,z 骨骼尾端x,y,z
 $DefineVariable foot_ik_fix 0  // 1、2、3...
 $DefineVariable calf_ik_fix 0  // 0.5开始调试
-$DefineVariable custom_model "smd/body.smd"     // 模型基底，一般不用于切换，没有blank项的Model或者bodygroup
-$DefineVariable ref_model alyx          //使用的人物动画，alyx或者male男市民d     //combine_soldier,police
+$DefineVariable custom_model "smd/body.smd"		// 模型基底，一般不用于切换，没有blank项的Model或者bodygroup (用于读取proportions静置姿态)
+$DefineVariable ref_model auto		//使用的人物动画，目前有alyx或者male男市民，auto会根据变量character自动匹配 (male,female,combine_soldier,police,alyx)
 
 $MaxBones 256
 $FileBufferSize 32
