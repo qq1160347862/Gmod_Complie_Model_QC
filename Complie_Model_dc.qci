@@ -1,5 +1,6 @@
 // by Starfelll、糯米饭团
-
+$cd ../
+$DefineVariable ROOT "../"
 $DefineVariable custom_model_name "XXX"
 $DefineVariable pps_z_delta 0  // 调整根骨的垂直位置正数为下，负数为上
 // 关于以下两参数，分别在DefineBones.qci中的calf和foot骨骼中使用，用于调整 <小腿外翻> 和 <脚的垂直位置>
@@ -32,15 +33,15 @@ $NekoModel "face" {
 	// studio "gltf/emotion.glb" innode "face_shy"   
     // studio "gltf/emotion.glb" innode "face_angry" 
 
-	// $include "qci/gmod_flex.qci"
-	// $include "qci/alyx_flex.qci"
+	// $include $ROOT$qci/gmod_flex.qci
+	// $include $ROOT$qci/alyx_flex.qci
 }
 
-$include "bodygroups.qci"
+$include $ROOT$bodygroups.qci
 
-$include "materials.qci"
+$include $ROOT$materials.qci
 
-$Include "animation/pps.qci"    // 以alyx和bmale的动作为基底，适配其他角色的ref动画
+$Include $ROOT$animation/pps.qci    // 以alyx和bmale的动作为基底，适配其他角色的ref动画
 $Animation "a_proportions" $custom_model$ Pick BindPose {   // 锁骨代码
     subtract "a_reference" 0
     origin 0 0 $pps_z_delta$
@@ -74,15 +75,15 @@ $forcephonemecrossfade
 $ambientboost
 $mostlyopaque
 
-$include "QCI/Attachment.qci"		// 附件位置
-$include "QCI/box.qci"				// 碰撞盒
-$Include "qci/DefineBones.qci" 		// 骨骼定义
-$include "flexbone.qci"
+$include $ROOT$QCI/Attachment.qci		// 附件位置
+$include $ROOT$QCI/box.qci				// 碰撞盒
+$Include $ROOT$qci/DefineBones.qci 		// 骨骼定义
+$include $ROOT$flexbone.qci
 //$include "qci/vrd.qci"
-$proceduralbones "model.vrd"
-$include "QCI/IKrules.qci"
+$proceduralbones $ROOT$model.vrd
+$include $ROOT$QCI/IKrules.qci
 
-$Include animation/$declare_sequences_qci$
+$Include $ROOT$animation/$declare_sequences_qci$
 $Sequence "Proportions" {
     "a_proportions" autoplay delta hidden
     // "Additive_animation" autoplay delta hidden
@@ -91,5 +92,5 @@ $Sequence "Proportions" {
 //     weightlist Additive_weightlist
 // }
 
-$include "qci/ragdoll.qci"
+$include $ROOT$qci/ragdoll.qci
 
