@@ -17,6 +17,7 @@ Gmod_Complie_Model_QC/
 ├── materials.qci           # 材质路径配置
 ├── flexbone.qci            # 飘动骨骼配置
 ├── model.vrd               # 程序化骨骼定义
+├── 编译所有角色.bat         # 批量编译脚本
 ├── 批量编译角色.bat         # 批量编译脚本
 │
 ├── characterQC/            # 角色 QC 入口文件（正在扩展中）
