@@ -1,9 +1,8 @@
 // by Starfelll、糯米饭团
 
 $DefineVariable custom_model "smd/主手臂.smd"
-$DefineVariable custom_model_name "XXX"
 
-$modelname "weapons\arms\$custom_model_name$_arms.mdl"
+$modelname "weapons\arms\xxx_arms.mdl"
 
 $BodyGroup "arms" {
     studio $custom_model$
